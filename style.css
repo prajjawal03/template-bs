@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+h1 {
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  margin: 1rem 2rem;
+}
+h2 {
+  font-family: cursive;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin: 1rem 2rem;
+}
+p {
+  font-size: 1.6rem;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 2.5rem;
+  padding: 0.7rem 2rem;
+  margin: 1.5rem 0;
+  background: white;
+  color: black;
+}
+.btn:hover {
+  opacity: 0.5;
+}
+/* navbar */
+.main-nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: white;
+  background: black;
+  opacity: 0.7;
+  height: 6rem;
+  z-index: 1;
+}
+ul.nav {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+ul.nav li {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 2rem 3rem;
+}
+ul.nav li a {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 0.7rem;
+}
+ul.nav li a:hover {
+  color: skyblue;
+  border-bottom: 1.6px solid white;
+}
+section {
+  height: 100vh;
+  width: 100%;
+}
+.showcase {
+  height: 100vh;
+  width: 100%;
+  background: url("./images/showcase.jpg") no-repeat center center/cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.parallax-img {
+  position: absolute;
+  min-height: 100vh;
+  width: 100%;
+  background: url("./images/img-2.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+  text-align: center;
+  color: white;
+  opacity: 0.8;
+}
+.article {
+  position: relative;
+  top: 30%;
+  width: 100%;
+  background: black;
+  color: white;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cards {
+  background: linear-gradient(to bottom, #d7e1ec 0%, #ffffff 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.9);
+  border-radius: 3rem;
+  margin: 0 2rem;
+  padding: 0.5rem 1rem;
+}
+.card:hover {
+  transform: scale(0.9);
+}
+.btn-card {
+  background: black;
+  opacity: 0.8;
+  border-radius: 3rem;
+  color: white;
+  text-transform: uppercase;
+}
+.card-img {
+  width: 100%;
+  border-radius: 3rem;
+}
+.info {
+  background: linear-gradient(to bottom, #d5d0e5 0%, #f3e6e8 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.info img {
+  width: 100%;
+  margin: 0px 2rem;
+  padding: 2rem;
+}
+.info div {
+  margin: 0rem 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.btn-info {
+  background: black;
+  color: white;
+  position: relative;
+  top: 2rem;
+}
+footer p {
+  text-align: center;
+  margin: 2rem 0rem;
+}
